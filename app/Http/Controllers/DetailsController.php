@@ -20,8 +20,12 @@ class DetailsController extends Controller{
    // $result = DB::table('details')->find(6);
    // return $result->roll;
 
-   ///==retrieve a single column ==//
-   $result = DB::table('details')->pluck('city');
+   ///==retrieve a single column by pluck ==//
+   // $result = DB::table('details')->pluck('city');
+   // return $result;
+
+   ///==retrieve multiple columns by pluck ==//
+   $result = DB::table('details')->pluck('city','name');
    return $result;
 
 
