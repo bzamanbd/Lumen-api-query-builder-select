@@ -12,7 +12,12 @@ class DetailsController extends Controller{
   }
 
   function selectRow(){
-   $result = DB::table('details')->where('id','3')->first();
+   ///==single row/column from table==///
+   // $result = DB::table('details')->where('id','3')->first();
+   // return $result->roll;
+
+   ///==retrieve a single row by id==//
+   $result = DB::table('details')->find(6);
    return $result->roll;
   }
 
