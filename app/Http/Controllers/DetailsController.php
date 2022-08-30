@@ -11,4 +11,9 @@ class DetailsController extends Controller{
     return response($result);
   }
 
+  function selectRow(){
+   $result = DB::table('details')->where('id','3')->first();
+   return $result->roll;
+  }
+
 }
