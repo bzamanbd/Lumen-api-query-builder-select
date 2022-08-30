@@ -25,7 +25,7 @@ class DetailsController extends Controller{
    // return $result;
 
    ///==retrieve multiple columns by pluck ==//
-   $result = DB::table('details')->pluck('city','name');
+   $result = DB::table('details')->pluck('name','class');
    return $result;
 
 
